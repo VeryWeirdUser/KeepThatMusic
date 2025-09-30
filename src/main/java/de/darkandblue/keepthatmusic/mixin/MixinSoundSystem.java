@@ -14,7 +14,7 @@ public abstract class MixinSoundSystem implements IMixinSoundSystem {
 	@Shadow
 	private Map<SoundInstance, Channel.SourceManager> sources;
 	
-	public Channel.SourceManager sourceManagerBySoundInstance(SoundInstance soundInstance) {
+	public Channel.SourceManager keepThatMusic$sourceManagerBySoundInstance(SoundInstance soundInstance) {
 		return sources.get(soundInstance);
 	}
 }

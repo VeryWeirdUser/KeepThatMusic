@@ -4,5 +4,5 @@ import net.minecraft.client.sound.Channel;
 import net.minecraft.client.sound.SoundInstance;
 
 public interface IMixinSoundSystem {
-	public Channel.SourceManager sourceManagerBySoundInstance(SoundInstance soundInstance);
+	Channel.SourceManager keepThatMusic$sourceManagerBySoundInstance(SoundInstance soundInstance);
 }

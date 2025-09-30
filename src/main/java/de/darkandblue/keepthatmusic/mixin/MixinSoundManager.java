@@ -43,7 +43,7 @@ public class MixinSoundManager implements IMixinSoundManager {
 	}
 	
 	@Override
-	public SoundSystem getSoundSystem() {
+	public SoundSystem keepThatMusic$getSoundSystem() {
 		return soundSystem;
 	}
 }
